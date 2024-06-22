@@ -1,14 +1,20 @@
 
-import { Link } from "react-router-dom";
-import { Home } from "./pages/home";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
+import { GlobalStyle } from './styles/global';
+import { Home } from './pages/home';
 
 const App = () => {
   return (
-    <>
-      <h2>Olá DIO</h2>
-      <Home />
-      <Link to="/login"> Ir para página Inicial</Link>
-    </>
+      <Router>
+       <GlobalStyle />
+       <Routes>
+          <Route path="/" element={<Home />} />
+       </Routes >
+      </Router>
   );
 }
 

@@ -4,7 +4,7 @@ import { ButtonContainer } from './styles';
 
 const Button = ({ title, variant = 'primary', onClick }) => {
     return (
-        <ButtonContainer>
+        <ButtonContainer variant={variant} onClick={onClick}>
             {title}
         </ButtonContainer>
     )
