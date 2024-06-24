@@ -12,7 +12,6 @@ export const Container = styled.main`
     align-items: center;
 
 `
-
 export const Wrapper = styled.div`
     max-width: 300px;
 `
@@ -26,7 +25,6 @@ export const Row = styled.div`
     align-Items: center;
     margin-top: 20px;
 `
-
 
 export const Title = styled.h2`
     font-family: 'Open Sans';
