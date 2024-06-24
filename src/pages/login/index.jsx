@@ -19,14 +19,14 @@ const Login = () => {
                 <Column>
                     <Wrapper>
                         <TitleLogin>Faça o seu Registo</TitleLogin>
-                        <SubTitleLogin>Faça seu login e make the change.</SubTitleLogin>
+                        <SubTitleLogin>Faça o seu login e make the change.</SubTitleLogin>
                         <form>
-                            <Input placeholder="email" leftIcon={<MdEmail/>}/>
-                            <Input placeholder="Senha" type="password" leftIcon={<MdLock/>}/>
+                            <Input placeholder="email" leftIcon={<MdEmail />} />
+                            <Input placeholder="Senha" type="password" leftIcon={<MdLock />} />
                             <Button title="Entrar" variant="secondary" />
                         </form>
                         <Row>
-                            <EsqueciText>Esqueci minha senha</EsqueciText>
+                            <EsqueciText>Esqueci a minha senha</EsqueciText>
                             <CriarText>Criar Conta</CriarText>
                         </Row>
                     </Wrapper>
