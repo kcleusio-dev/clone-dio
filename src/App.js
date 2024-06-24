@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import { GlobalStyle } from './styles/global';
 import { Home } from './pages/home';
+import { Login } from "./pages/login";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
        <GlobalStyle />
        <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
        </Routes >
       </Router>
   );
