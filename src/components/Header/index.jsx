@@ -12,12 +12,24 @@ import {
   Wrapper
 } from './styles';
 
+import { useNavigate } from 'react-router-dom';
+
 const Header = ({ autenticado }) => {
+
+  const navigate = useNavigate();
+  const handleClickHome = () => {
+    navigate('/');
+  }
+
+  const handleClickSignIn = () => {
+      navigate('/login');
+  }
+
   return (
     <Wrapper>
       <Container>
         <Row>
-          <img src={logo} alt='Logo da dio' />
+          <img src={logo} alt='Logo da dio' onClick={handleClickHome} />
           {autenticado ? (
             <>
               <BuscarInputContainer>
@@ -34,7 +46,7 @@ const Header = ({ autenticado }) => {
           ) : (
             <>
               <MenuRight href='#'>Home</MenuRight>
-              <Button title='Entrar' />
+              <Button title='Entrar' onClick={handleClickSignIn}/>
               <Button title='Registar' />
             </>
 

@@ -30,7 +30,7 @@ const Login = () => {
                         <form>
                             <Input placeholder="email" leftIcon={<MdEmail/>}/>
                             <Input placeholder="Senha" type="password" leftIcon={<MdLock/>}/>
-                            <Button title="Entrar" variant="secondary" />
+                            <Button title="Entrar" variant="secondary" onClick={handleClickSignIn}/>
                         </form>
                         <Row>
                             <EsqueciText>Esqueci a minha senha</EsqueciText>
