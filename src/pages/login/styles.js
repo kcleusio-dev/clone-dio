@@ -12,6 +12,9 @@ export const Container = styled.main`
     align-items: center;
 
 `
+
+
+
 export const Wrapper = styled.div`
     max-width: 300px;
 `
